@@ -8,8 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @MapperScan("com.ectrl.authentication.mapper")
 public class AuthenticationApplication {
 
+
     public static void main(String[] args) {
         SpringApplication.run(AuthenticationApplication.class, args);
+
     }
 
 }

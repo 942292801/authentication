@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 38383
 spring:
   datasource:
     #   数据源基本配置

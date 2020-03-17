@@ -8,6 +8,13 @@ import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 
+/**
+*@Author: Wen zhenwei
+*@date: 2020/3/16 11:22
+*@Description: druid连接池的内置监控统计功能
+*@Param: 
+*@return: 
+*/
 public class DuridConfig {
     @ConfigurationProperties(prefix = "spring.datasource")
     @Bean
