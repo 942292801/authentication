@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Main-Class: com.ectrl.authentication.AuthenticationApplication
+Class-Path: jackson-annotations-2.10.2.jar log4j-slf4j-impl-2.12.1.jar s
+ pring-core-5.2.2.RELEASE.jar spring-context-5.2.2.RELEASE.jar mysql-con
+ nector-java-8.0.18.jar spring-beans-5.2.2.RELEASE.jar spring-boot-start
+ er-log4j2-2.2.2.RELEASE.jar spring-boot-starter-web-2.2.2.RELEASE.jar m
+ ybatis-plus-core-3.3.0.jar druid-spring-boot-starter-1.1.10.jar jackson
+ -module-parameter-names-2.10.2.jar log4j-core-2.12.1.jar spring-express
+ ion-5.2.2.RELEASE.jar spring-boot-starter-validation-2.2.2.RELEASE.jar 
+ spring-tx-5.2.2.RELEASE.jar jakarta.validation-api-2.0.1.jar spring-web
+ mvc-5.2.2.RELEASE.jar log4j-api-2.12.1.jar jsqlparser-3.1.jar spring-bo
+ ot-2.2.2.RELEASE.jar jboss-logging-3.4.1.Final.jar spring-web-5.2.2.REL
+ EASE.jar spring-boot-starter-jdbc-2.2.2.RELEASE.jar jackson-databind-2.
+ 10.2.jar jackson-datatype-jdk8-2.10.2.jar hibernate-validator-6.0.18.Fi
+ nal.jar snakeyaml-1.25.jar jackson-datatype-jsr310-2.10.2.jar mybatis-p
+ lus-3.3.0.jar lombok-1.18.10.jar classmate-1.5.1.jar mybatis-plus-exten
+ sion-3.3.0.jar mybatis-plus-boot-starter-3.3.0.jar jackson-core-2.10.2.
+ jar spring-jcl-5.2.2.RELEASE.jar spring-aop-5.2.2.RELEASE.jar tomcat-em
+ bed-core-9.0.29.jar spring-boot-starter-tomcat-2.2.2.RELEASE.jar Hikari
+ CP-3.4.1.jar mybatis-plus-annotation-3.3.0.jar spring-boot-starter-2.2.
+ 2.RELEASE.jar druid-1.1.10.jar tomcat-embed-websocket-9.0.29.jar jul-to
+ -slf4j-1.7.29.jar spring-boot-starter-json-2.2.2.RELEASE.jar spring-boo
+ t-autoconfigure-2.2.2.RELEASE.jar spring-jdbc-5.2.2.RELEASE.jar jakarta
+ .annotation-api-1.3.5.jar log4j-jul-2.12.1.jar slf4j-api-1.7.29.jar myb
+ atis-3.5.3.jar tomcat-embed-el-9.0.29.jar mybatis-spring-2.0.3.jar
+

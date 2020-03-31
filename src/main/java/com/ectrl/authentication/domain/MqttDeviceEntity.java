@@ -17,8 +17,14 @@ public class MqttDeviceEntity implements Serializable {
     /** id */
     private Integer id;
 
-    /** certId */
-    private String certId;
+    /** sn */
+    private String sn;
+
+    /** mac */
+    private String mac;
+
+    /** crc */
+    private String crc;
 
     /** created */
     private Date created;

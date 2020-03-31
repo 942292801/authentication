@@ -10,9 +10,10 @@
     </parent>
     <groupId>com.ectrl</groupId>
     <artifactId>authentication</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>authentication</name>
     <description>Demo project for Spring Boot</description>
+    <packaging>jar</packaging>
 
     <properties>
         <!-- 环境配置 -->
@@ -82,7 +83,16 @@
             <scope>test</scope>
         </dependency>
 
+
         <!-- tools End-->
+
+       <!--  进行Base64对字符串进行编码与解码 Start
+        <dependency>
+            <groupId>pub.codex</groupId>
+            <artifactId>codex-common</artifactId>
+            <version>${codex.version}</version>
+        </dependency>
+         进行Base64对字符串进行编码与解码 End-->
 
         <!-- log4j2 日志set-->
         <dependency>

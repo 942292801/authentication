@@ -19,8 +19,8 @@ public class CRC16Util {
      * @param data 需要计算的数组
      * @return CRC16校验值
      */
-    public static int calcCrc16(byte[] data) {
-        return calcCrc16(data, 0, data.length);
+    public static String calcCrc16(byte[] data) {
+        return   calcCrc16(data, 0, data.length);
     }
 
     /**
@@ -31,8 +31,8 @@ public class CRC16Util {
      * @param len    长度
      * @return CRC16校验值
      */
-    public static int calcCrc16(byte[] data, int offset, int len) {
-        return calcCrc16(data, offset, len, 0xffff);
+    public static String calcCrc16(byte[] data, int offset, int len) {
+        return getCrc(calcCrc16(data, offset, len, 0xffff));
     }
 
     /**
@@ -62,11 +62,12 @@ public class CRC16Util {
      * @return
      */
     public static String getCrc(int res) {
-        String format = String.format("%04x", res);
-        String substring = format.substring(0, 2);
-        String substring1 = format.substring(2, 4);
+        String format = String.format("%04X", res);
+        //String substring = format.substring(0, 2);
+        //String substring1 = format.substring(2, 4);
         //Log.i("BLUEDATA", "crc ---- : " + substring + "  " + substring1);
-        return substring.concat(" ").concat(substring1).concat(" ");
+        //return substring.concat(" ").concat(substring1).concat(" ");
+        return  format;
     }
 }
 
