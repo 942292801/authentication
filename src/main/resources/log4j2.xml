@@ -2,7 +2,7 @@
 <Configuration status="WARN">
     <properties>
         <!--路径-->
-        <property name="LOG_HOME">C:\Users\Administrator\Desktop\Project\MQTT\authentication\logs</property>
+        <property name="LOG_HOME">/logs</property>
         <!--文件名-->
         <property name="FILE_NAME">mylog</property>
         <property name="log.sql.level">info</property>

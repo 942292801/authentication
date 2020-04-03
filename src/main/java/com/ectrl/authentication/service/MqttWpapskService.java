@@ -2,13 +2,14 @@ package com.ectrl.authentication.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.ectrl.authentication.domain.MqttWpapskEntity;
+import com.ectrl.authentication.dto.BaseResult;
 
 public interface MqttWpapskService extends IService<MqttWpapskEntity> {
 
     /**
     *@Author: Wen zhenwei
     *@date: 2020/3/17 11:44
-    *@Description: 获取服务器公私钥
+    *@Description: 获取认证服务器公钥
     *@Param: []
     *@return: com.ectrl.authentication.domain.MqttWpapskEntity
     */
@@ -27,7 +28,7 @@ public interface MqttWpapskService extends IService<MqttWpapskEntity> {
     /**
     *@Author: Wen zhenwei
     *@date: 2020/3/26 13:53
-    *@Description: RSA加密 数据库获取publickey
+    *@Description: RSA加密 (数据库获取publickey)
     *@Param: [msg]
     *@return: java.lang.String
     */
@@ -36,7 +37,7 @@ public interface MqttWpapskService extends IService<MqttWpapskEntity> {
     /**
     *@Author: Wen zhenwei
     *@date: 2020/3/26 14:04
-    *@Description: RSA解密 数据库获取privatekey
+    *@Description: RSA解密 (数据库获取privatekey)
     *@Param: [content 加密内容]
     *@return: java.lang.String
     */

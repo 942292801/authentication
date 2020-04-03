@@ -57,7 +57,6 @@ public class WpapskController {
     */
     @RequestMapping("/updatekey")
     public BaseResult setKey()  {
-
         if(mqttWpapskService.updateKey()){
             return BaseResult.success("更新公钥成功");
 
@@ -77,18 +76,14 @@ public class WpapskController {
     */
     @RequestMapping("/encrypt")
     public BaseResult encryptStr(@RequestParam(value = "content") String content) throws Exception {
+        String encryptStr = mqttWpapskService.encryptString(content);
+        if (StringUtils.isEmpty(encryptStr) ){
+            return BaseResult.fail("加密数据失败");
 
-            String encryptStr = mqttWpapskService.encryptString(content);
-            if (StringUtils.isEmpty(encryptStr) ){
-                return BaseResult.fail("加密数据失败");
+        }else {
+            return BaseResult.success("加密数据成功",encryptStr);
 
-            }else {
-                return BaseResult.success("加密数据成功",encryptStr);
-
-            }
-
-
-
+        }
     }
 
     /**
@@ -100,20 +95,15 @@ public class WpapskController {
     */
     @RequestMapping("/decrypt")
     public BaseResult decryptStr(@RequestParam(value = "content") String content ) throws Exception {
+        String encryptStr = mqttWpapskService.decryptString(content);
+        if (StringUtils.isEmpty(encryptStr)){
+            return BaseResult.fail("解密数据失败");
 
-            String encryptStr = mqttWpapskService.decryptString(content);
-            if (StringUtils.isEmpty(encryptStr)){
-                return BaseResult.fail("解密数据失败");
+        }else
+        {
+            return BaseResult.success("解密数据成功",encryptStr);
 
-            }else
-            {
-                return BaseResult.success("解密数据成功",encryptStr);
-
-            }
-
-
-
-
+        }
     }
 
 

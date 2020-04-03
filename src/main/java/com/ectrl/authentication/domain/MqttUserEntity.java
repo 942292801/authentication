@@ -17,7 +17,7 @@ import java.util.Date;
 @TableName(value = "mqtt_user")
 public class MqttUserEntity implements Serializable {
     /** id */
-    private Integer id;
+    private Long id;
 
     /** sn */
     private String sn;
@@ -38,10 +38,13 @@ public class MqttUserEntity implements Serializable {
     private Date created;
 
     /** phone */
-    private Integer phone;
+    private Long phone;
 
     /** email */
     private String email;
+
+    /** channel */
+    private String channel;
 
     /** scWpapsk */
     private String scWpapsk;
