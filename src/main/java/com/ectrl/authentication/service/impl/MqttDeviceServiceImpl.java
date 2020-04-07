@@ -86,7 +86,7 @@ public class MqttDeviceServiceImpl extends ServiceImpl<MqttDeviceMapper, MqttDev
             return BaseResult.success("数字证书认证成功",enResource);
         } catch (Exception e) {
             e.printStackTrace();
-            return BaseResult.fail("发生未知错误！");
+            return BaseResult.fail(e.getMessage());
         }
     }
 

@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.ectrl</groupId>
     <artifactId>authentication</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
     <name>authentication</name>
     <description>Demo project for Spring Boot</description>
     <packaging>jar</packaging>
@@ -25,6 +25,7 @@
         <mybatis.version>3.3.0</mybatis.version>
         <jackson.version>2.10.2</jackson.version>
         <guava.version>28.2-jre</guava.version>
+        <swagger.version>2.9.2</swagger.version>
     </properties>
 
     <dependencies>
@@ -125,6 +126,19 @@
             <version>${guava.version}</version>
         </dependency>
         <!-- Google Guava End -->
+
+        <!-- swagger Begin -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+        <!-- swagger End -->
     </dependencies>
 
     <build>

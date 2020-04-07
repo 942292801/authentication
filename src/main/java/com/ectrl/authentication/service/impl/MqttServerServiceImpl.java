@@ -90,7 +90,7 @@ public class MqttServerServiceImpl extends ServiceImpl<MqttServerMapper, MqttSer
 
         } catch (Exception e) {
             e.printStackTrace();
-            return BaseResult.fail("发生未知错误！");
+            return BaseResult.fail(e.getMessage());
         }
     }
 

@@ -36,3 +36,5 @@ logging:
     com:
       example:
         mapper : debug
+#swagger2
+springfox.documentation.swagger.v2.path: /api-docs
