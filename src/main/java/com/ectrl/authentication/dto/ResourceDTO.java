@@ -23,6 +23,12 @@ public class ResourceDTO implements Serializable {
     /** channel */
     private String channel;
 
+    /** scWpapsk */
+    private String scWpapsk;
+
+    /** scPassword */
+    private String scPassword;
+
     /** certid */
     private String certid;
 

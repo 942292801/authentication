@@ -33,8 +33,8 @@ public class Swagger2 {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Spring Boot中使用Swagger2构建RESTful APIs")
-                .description("服务:Spring Boot中使用Swagger2构建RESTful APIs")
+                .title("认证服务器")
+                .description("Spring Boot中使用Swagger2构建RESTful APIs")
                 //.termsOfServiceUrl("http://192.168.1.198:10070/platformgroup/ms-admin")
                 .contact("Wen zhenwei")
                 .version("1.0.0")

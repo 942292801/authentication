@@ -70,6 +70,8 @@ public class MqttDeviceServiceImpl extends ServiceImpl<MqttDeviceMapper, MqttDev
             resourceDTO.setUsername(mqttUserEntity.getUsername());
             resourceDTO.setPasswword(mqttUserEntity.getPassword());
             resourceDTO.setChannel(mqttUserEntity.getChannel());
+            resourceDTO.setScWpapsk(mqttUserEntity.getScWpapsk());
+            resourceDTO.setScPassword(mqttUserEntity.getScPassword());
             resourceDTO.setCertid(mqttDeviceEntity.getSn()+mqttDeviceEntity.getMac()+mqttDeviceEntity.getCrc());
             //查询绑定的主服务器
             List<MqttServerEntity> mqttServerEntityList =  mqttServerService.getListByUserId(mqttDeviceEntity.getUserId());
