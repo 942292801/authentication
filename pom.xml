@@ -23,7 +23,7 @@
         <!-- 统一的依赖管理 -->
         <druid.version>1.1.10</druid.version>
         <mybatis.version>3.3.0</mybatis.version>
-        <jackson.version>2.10.2</jackson.version>
+        <jackson.version>2.13.4.1</jackson.version>
         <guava.version>28.2-jre</guava.version>
         <swagger.version>2.9.2</swagger.version>
     </properties>
